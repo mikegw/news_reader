@@ -1,0 +1,7 @@
+<h1><%= feed.escape('title') %></h1>
+
+<ul class="entry-list">
+  <% feed.entries().each(function (entry) { %>
+    <li><a href="<%= entry.escape('link') %>"><%= entry.escape("title") %></li>
+  <% }) %>
+</ul>
